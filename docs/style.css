@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'ArtegraSans';
+    src: url('ArtegraSans-Regular.woff2') format('woff2'), 
+    url('ArtegraSans-Regular.woff2') format('woff');
+  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ArtegraSans";
+    color: white;
+}
+body {
+    background-color: #efedea;
+}
+a , button {
+    text-decoration: none;
+    background-color: none;
+    margin: 0;
+    border: none;
+}
+/* header */
+header {
+    width: 80%; 
+    height: auto;
+    margin: 1vw auto;
+    border-radius: 2vw;
+    background-color: #77726e;
+}
+#flex-container-header {
+    width: 98%;
+    height: 4vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#flex-container-header span , #flex-container-header a{
+    font-size: 1.7vw;
+    height: 1.7vw;
+}
+#main-container-header  #flex-container-header img {
+    height: 2.5vw;
+    background-color: #aea59d;
+}
+#main-container-header  #flex-container-header button {
+    padding: 0.2vw 1vw;
+    background-color: #aea59d;
+    border-radius: 1.3vw;
+}
+
+/* main */
+#main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#main-photo-container {
+    margin-top: 4vw;
+    width: 100%;
+    height: auto;
+    background-color: rgb(174, 165, 157 , 0.55);
+    border-radius: 2vw;
+}
+#text-main-photo-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 4vw;
+    margin-right: auto;
+    padding-bottom: 3vw;
+    padding-top: 4vw;
+}
+#text-main-photo-container h1 {
+    font-size: 3.5vw;
+}
+#text-main-photo-container h3 {
+    font-size: 2.5vw;
+    margin-top: 1vw;
+}
+#text-main-photo-container button {
+    width: 60%;
+    font-size: 2vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    background-color: #77726e;
+    border-radius: 3vw;
+    margin-top: 2vw;
+}
+/* primer */
+#main-primer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3vw;
+}
+#main-primer-container p {
+    display: inline;
+    width: auto;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    background-color: rgb(174, 165, 157 , 0.8);
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    font-size: 2.2vw;
+}
+#flex-main-primer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#flex-main-primer-container button {
+    width: 21%;
+    height: 17.6vw;
+    margin-bottom: 1vw;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #aea59d;
+}
+#flex-main-primer-container button img , #flex-main-primer-container button span {
+    margin: auto;
+    font-size: 2vw;
+}
+#flex-main-primer-container button img {
+    width: 70%;
+    height: 55%;
+}
+/* zapros */
+#main-zapros-block {
+    width: 100%;
+    height: auto;
+    background-color: rgb(180, 180, 180 , 0.7);
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin-top: 4vw;
+}
+#main-zapros-container {
+    width: 76.8%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(180, 180, 180 , 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2vw;
+}
+#text-main-zapros-container {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    margin-left: 3vw;
+}
+#text-main-zapros-container h1 {
+    font-size: 3vw;
+    margin-bottom: 0.5vw;
+}
+#text-main-zapros-container h3 {
+    font-size: 2.2vw;
+}
+#img-main-zapros-container {
+    width: 22%;
+    height: auto;
+    background-color: rgb(180, 180, 180 , 0.7);
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: 3vw;
+    border-radius: 2vw;
+    padding: 1vw;
+}
+#img-main-zapros-container div {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+#img-main-zapros-container div img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: auto;
+}
+#main-zapros {
+    width: 60%;
+    height: auto;
+    background-color: rgb(174, 165, 157 , 0.6);
+    margin: 0;
+    margin-left: 3vw;
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+}
+#main-zapros-mini-container h1 {
+    margin-left: 2vw;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+#main-zapros div select {
+    background-color: rgb(119, 114, 110 , 0.75);
+    padding: 0.5vw 0.7vw;
+    font-size: 1.4vw;
+    border-radius: 2vw;
+    display: inline-block;
+    margin-left: 2vw;
+}
+#main-zapros-tel {
+    display: flex;
+    justify-content: space-around;
+}
+#main-zapros div input {
+    background-color: rgb(119, 114, 110 , 0.75);
+    padding: 0.5vw 0.7vw;
+    font-size: 1.4vw;
+    border-radius: 2vw;
+    border: none;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    padding-left: 1vw;
+    margin-bottom: 1vw;
+}
+#main-zapros div button {
+    background-color: rgb(119, 114, 110 , 0.75);
+    padding: 0.5vw 0.7vw;
+    font-size: 1.4vw;
+    border-radius: 2vw;
+    border: none;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+/* zamer */
+#zamer-page {
+    width: 100%;
+    background-color: #efedea;
+    height: auto;
+}
+#zamer-container { 
+    width: 74.8%;
+    height: auto;
+    padding: 1vw;
+    background-color: rgba(174, 165, 157, 0.8);
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#h1text-zamer {
+    font-size: 2.3vw;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+}
+#h3text-zamer {
+    display: block;
+    font-size: 1.9vw;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+}
+#name-zamer {
+    display: flex;
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
+#name-zamer p {
+    font-size: 1.8vw;
+    margin-right: 1vw;
+}
+#name-zamer input {
+    border-radius: 2vw;
+    background-color: #aea59d;
+    font-size: 1.4vw;
+    padding-left: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    border: none;
+}
+#tel-zamer  select {
+    font-size: 1.8vw;
+    background-color: rgba(174, 165, 157, 0);
+    border: none;
+    margin: 0;
+    margin-left: 30%;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+}
+#tel-zamer input {
+    border-radius: 2vw;
+    background-color: #aea59d;
+    font-size: 1.4vw;
+    padding-left: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    border: none;
+}
+/* services */
+#ser-page {
+    width: 100%;
+    height: auto;
+    margin-top: 5vw;
+}
+#ser-page h1 {
+    display: inline-block;
+    font-size: 2.5vw;
+    margin: 0;
+    margin-left: 3vw;
+    margin-right: auto;
+    margin-top: 2vw;
+    padding: 1vw;
+    background-color: rgba(174, 165, 157, 0.7);
+    border-radius: 3vw;
+}
+#ser-block {
+    width: 95%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+#front , #back {
+    width: 6%;
+    height: 5vw;
+    background-color: black;
+    border-radius: 1vw;
+    align-self: center;
+}
+#ser-block div div {
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #aea59d;
+    border-radius: 2vw;
+}
+#ser-block div div h3 {
+    font-size: 2vw;
+    margin-left: 1vw;
+    margin-right: auto;
+}
+#ser-block div div img {
+    width: 80%;
+    margin: 1vw auto;
+    border-radius: 2vw;
+}
+#ser-block div div button {
+    align-self: center;
+    width: auto;
+    font-size: 1.5vw;
+    height: auto;
+    padding: 0.5vw 1vw;
+    border-radius: 2vw;
+    margin-top: auto;
+    margin-bottom: 1vw;
+    background-color: rgba(119, 114, 110, 1);
+}
+#ser-block div div p {
+    width: 90%;
+    word-break: break-all;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5vw;
+    height: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+#page-1-ser {
+    display: flex;
+    justify-content: space-around;
+    width: 88%;
+}
+#page-2-ser {
+    display: none;
+}
