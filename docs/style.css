@@ -98,7 +98,7 @@ header {
     display: inline;
     width: auto;
     padding: 1vw 2vw;
-    border-radius: 2vw;
+    border-radius: 2.5vw;
     background-color: rgb(174, 165, 157 , 0.8);
     margin-bottom: 2vw;
     margin-top: 2vw;
@@ -324,10 +324,11 @@ header {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3vw;
     height: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 2vw;
+    margin-top: 4vw;
 }
 #front , #back {
     width: 6%;
@@ -337,7 +338,7 @@ header {
     align-self: center;
 }
 #ser-block div div {
-    width: 23%;
+    width: 22%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -382,4 +383,120 @@ header {
 }
 #page-2-ser {
     display: none;
+}
+/* plus */
+#advantages-page {
+    width: 100%;
+    height: auto;
+}
+#advantages-page h1 {
+    display: inline-block;
+    font-size: 2.5vw;
+    margin: 0;
+    margin-left: 3vw;
+    margin-right: auto;
+    margin-top: 2vw;
+    padding: 1vw;
+    background-color: rgba(174, 165, 157, 0.7);
+    border-radius: 3vw;
+}
+#advantages-page #advantages-block {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3vw auto;
+}
+#advantages-page #advantages-block  div {
+    width: 31%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(174, 165, 157, 0.15);
+    margin-top: 2vw;
+    border-radius: 2vw;
+    height: 17vw;
+}
+#advantages-page #advantages-block  img {
+    width: 35%;
+    height: auto;
+    margin: 0;
+    margin-right: auto;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+#advantages-page #advantages-block  p {
+    width: 60%;
+    height: auto;
+    word-break: keep-all;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+#advantages-page #advantages-block  h3 {
+    display: block;
+    width: auto;
+    height: auto;
+    word-break: keep-all;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+
+@media screen and (max-width:1024px) {
+    header {
+        width: 95%;
+        height: 5vw;
+        border-radius: 2.5vw;
+    }
+    #flex-container-header span a {
+        font-size: 2.2vw;
+    }
+    #main {
+        width: 95%;
+    }
+    #main-primer-container p {
+        font-size: 2.5vw;
+    }
+    #main-zapros-container {
+        width: 90%;
+    }
+    #main-zapros-mini-container h1 {
+        font-size: 2.2vw;
+    }
+    #main-zapros div input {
+        padding: 0.7vw 1vw;
+        font-size: 1.6vw;
+    }
+    #main-zapros div select {
+        padding: 0.7vw 0.7vw;
+        font-size: 1.6vw;
+    }
+    #main-zapros div button {
+        font-size: 1.8vw;
+    }
+    #zamer-container {
+        width: 88%;
+    }
+    #h1text-zamer {
+        font-size: 2.8vw;
+    }
+    #h3text-zamer {
+        font-size: 2.4vw;
+    }
+    #name-zamer p {
+        font-size: 2vw;
+    }
+    #name-zamer input {
+        padding: 0.7vw 1vw;
+        font-size: 1.6vw;
+    }
+    #tel-zamer select {
+        font-size: 2vw;
+    }
+    #tel-zamer input {
+        padding: 0.7vw 1vw;
+        font-size: 1.6vw;
+    }
 }
