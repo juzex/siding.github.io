@@ -21,32 +21,42 @@ a , button {
 /* header */
 header {
     width: 80%; 
-    height: auto;
+    height: 4vw;
     margin: 1vw auto;
     border-radius: 2vw;
     background-color: #77726e;
 }
 #flex-container-header {
     width: 98%;
-    height: 4vw;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
-#flex-container-header span , #flex-container-header a{
-    font-size: 1.7vw;
-    height: 1.7vw;
+#flex-container-header button {
+    display: none;
 }
-#main-container-header  #flex-container-header img {
-    height: 2.5vw;
+#flex-container-header span {
+    font-size: 1.7vw;
+    height: auto;
+}
+#flex-container-header span a {
+    height: auto;
+}
+#tel-header img {
+    height: 90%;
+    width: 90%;
+    padding: auto;
     background-color: #aea59d;
 }
-#main-container-header  #flex-container-header button {
+#tel-header  {
     padding: 0.2vw 1vw;
     background-color: #aea59d;
-    border-radius: 1.3vw;
+    border-radius: 40%;
+    height: 60%;
+    width: auto;
 }
 
 /* main */
@@ -61,6 +71,8 @@ header {
     height: auto;
     background-color: rgb(174, 165, 157 , 0.55);
     border-radius: 2vw;
+    display: flex;
+    justify-content: space-between;
 }
 #text-main-photo-container {
     display: flex;
@@ -86,6 +98,21 @@ header {
     background-color: #77726e;
     border-radius: 3vw;
     margin-top: 2vw;
+}
+#photo-main-photo {
+    width: 50%;
+    height: 80%;
+    position: relative;
+    left: 3vw;
+    top: 1vw;
+}
+#photo-main-photo img {
+    width: 120%;
+    height: auto;
+    transition: 2s;
+}
+#photo-main-photo img:hover {
+    transform: scale(1.1);
 }
 /* primer */
 #main-primer-container {
@@ -194,12 +221,13 @@ header {
 #main-zapros-mini-container h1 {
     margin-left: 2vw;
     margin-top: 1vw;
-    font-size: 2vw;
+    font-size: 2.2vw;
 }
 #main-zapros div select {
     background-color: rgb(119, 114, 110 , 0.75);
+    border: none;
     padding: 0.5vw 0.7vw;
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     border-radius: 2vw;
     display: inline-block;
     margin-left: 2vw;
@@ -211,7 +239,7 @@ header {
 #main-zapros div input {
     background-color: rgb(119, 114, 110 , 0.75);
     padding: 0.5vw 0.7vw;
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     border-radius: 2vw;
     border: none;
     margin-top: 1vw;
@@ -222,7 +250,7 @@ header {
 #main-zapros div button {
     background-color: rgb(119, 114, 110 , 0.75);
     padding: 0.5vw 0.7vw;
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     border-radius: 2vw;
     border: none;
     margin-top: 1vw;
@@ -252,15 +280,16 @@ header {
     flex-direction: column;
 }
 #h1text-zamer {
-    font-size: 2.3vw;
+    font-size: 2.5vw;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1vw;
+    border-bottom: 0.2vw solid white;
 }
 #h3text-zamer {
     display: block;
-    font-size: 1.9vw;
+    font-size: 2.1vw;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -275,28 +304,38 @@ header {
     font-size: 1.8vw;
     margin-right: 1vw;
 }
-#name-zamer input {
-    border-radius: 2vw;
-    background-color: #aea59d;
-    font-size: 1.4vw;
-    padding-left: 0.5vw;
-    padding-bottom: 0.5vw;
-    padding-top: 0.5vw;
-    border: none;
+#photo1-zamer {
+    width: 15%;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+    left: 75%;
+    bottom: 23vw;
+    transform: scaleX(-1) rotate(-10deg);
+
+}
+#photo2-zamer {
+    width: 20%;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+    right: 6%;
+    bottom: 17vw;
 }
 #tel-zamer  select {
     font-size: 1.8vw;
     background-color: rgba(174, 165, 157, 0);
     border: none;
     margin: 0;
-    margin-left: 30%;
+    margin-left: 25%;
     margin-top: 5vw;
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
 }
-#tel-zamer input {
+#tel-zamer input , #name-zamer input {
+    height: 3vw;
     border-radius: 2vw;
     background-color: #aea59d;
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     padding-left: 0.5vw;
     padding-bottom: 0.5vw;
     padding-top: 0.5vw;
@@ -306,16 +345,16 @@ header {
 #ser-page {
     width: 100%;
     height: auto;
-    margin-top: 5vw;
+    margin-top: -12vw;
 }
 #ser-page h1 {
     display: inline-block;
     font-size: 2.5vw;
     margin: 0;
-    margin-left: 3vw;
+    margin-left: 5vw;
     margin-right: auto;
-    margin-top: 2vw;
-    padding: 1vw;
+    margin-top: 0vw;
+    padding: 1vw 2vw;
     background-color: rgba(174, 165, 157, 0.7);
     border-radius: 3vw;
 }
@@ -331,14 +370,26 @@ header {
     margin-top: 4vw;
 }
 #front , #back {
-    width: 6%;
+    width: 5vw;
     height: 5vw;
-    background-color: black;
-    border-radius: 1vw;
+    border-radius: 50%;
     align-self: center;
+    background-color: none;
+}
+#front  img , #back img {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: none;
+    box-shadow: inset 1em 0px rgb(239, 237, 234) , 1em 0px rgba(119, 114, 110, 0.75) , inset 10em 0px rgba(119, 114, 110, 0.75);
+}
+#back img {
+    transform: rotate(180deg);
 }
 #ser-block div div {
-    width: 22%;
+    width: 44%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -346,7 +397,7 @@ header {
     border-radius: 2vw;
 }
 #ser-block div div h3 {
-    font-size: 2vw;
+    font-size: 2.2vw;
     margin-left: 1vw;
     margin-right: auto;
 }
@@ -358,30 +409,30 @@ header {
 #ser-block div div button {
     align-self: center;
     width: auto;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     height: auto;
     padding: 0.5vw 1vw;
     border-radius: 2vw;
     margin-top: auto;
     margin-bottom: 1vw;
-    background-color: rgba(119, 114, 110, 1);
+    background-color: rgba(119, 114, 110, 0.75);
 }
 #ser-block div div p {
     width: 90%;
     word-break: break-all;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     height: auto;
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
-#page-1-ser {
+#page-1-ser , #page-2-ser , #page-3-ser , #page-4-ser {
     display: flex;
     justify-content: space-around;
-    width: 88%;
+    width: 44%;
 }
-#page-2-ser {
+#page-3-ser , #page-4-ser {
     display: none;
 }
 /* plus */
@@ -444,59 +495,380 @@ header {
     font-size: 2vw;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1100px) {
     header {
-        width: 95%;
-        height: 5vw;
-        border-radius: 2.5vw;
+        width: 90%;
+        height: 6vw;
+        border-radius: 3vw;
     }
-    #flex-container-header span a {
-        font-size: 2.2vw;
+    #tel-header  {
+        padding: 0.2vw 1.2vw;
+        border-radius: 35%;
     }
     #main {
-        width: 95%;
+        width: 90%;
     }
-    #main-primer-container p {
-        font-size: 2.5vw;
+    #photo-main-photo img{
+        width: 105%;
     }
     #main-zapros-container {
         width: 90%;
     }
-    #main-zapros-mini-container h1 {
+    #zamer-container {
+        width: 88%;
+    }
+    #photo1-zamer {
+        width: 15%;
+        left: 78%;
+        bottom: 27vw;
+        width: 18%;
+    }
+    #photo2-zamer {
+        width: 20%;
+        right: 16%;
+        bottom: 20vw;
+        width: 23%;
+    }
+    #flex-container-header span a {
+        font-size: 2.3vw;
+    }
+    #text-main-photo-container button {
+        font-size: 2.5vw;
+    }
+    #text-main-photo-container h1 {
+        font-size: 4vw;
+    }
+    #text-main-photo-container h3 {
+        font-size: 3.3vw;
+        font-weight: 500;
+    }
+    #main-primer-container p {
+        font-size: 2.7vw;
+    }
+    #flex-main-primer-container button span {
         font-size: 2.2vw;
     }
+    #text-main-zapros-container h1 {
+        font-size: 3.5vw;
+    }
+    #text-main-zapros-container h3 {
+        font-size: 2.7vw;
+    }
+    #main-zapros-mini-container h1 {
+        font-size: 2.7vw;
+    }
     #main-zapros div input {
-        padding: 0.7vw 1vw;
-        font-size: 1.6vw;
+        padding: 0.7vw 1.2vw;
+        font-size: 2vw;
     }
     #main-zapros div select {
         padding: 0.7vw 0.7vw;
-        font-size: 1.6vw;
+        font-size: 2vw;
     }
     #main-zapros div button {
-        font-size: 1.8vw;
+        font-size: 2vw;
+    }
+    #h1text-zamer {
+        font-size: 3vw;
+    }
+    #h3text-zamer {
+        font-size: 2.7vw;
+    }
+    #tel-zamer select , #name-zamer p {
+        font-size: 2.4vw;
+    }
+    #tel-zamer input , #name-zamer input{
+        padding: 2vw 1vw;
+        font-size: 2vw;
+    }
+    #ser-page h1 {
+        font-size: 2.7vw;
+    }
+    #ser-block div div h3 {
+    font-size: 2.5vw;
+    }
+    #ser-block div div button {
+    font-size: 2vw;
+    }
+    #ser-block div div p {
+        font-size: 2vw;
+    }
+    #front img , #back img {
+        box-shadow: inset 0.5em 0px rgb(239, 237, 234) , 0.5em 0px rgba(119, 114, 110, 0.75) , inset 10em 0px rgba(119, 114, 110, 0.75);
+    }
+}
+@media screen and (max-width:800px) {
+    header {
+        width: 90%;
+        height: 6vw;
+        border-radius: 3vw;
+    }
+    #tel-header  {
+        padding: 0.2vw 1.2vw;
+        border-radius: 35%;
+    }
+    #main {
+        width: 90%;
+    }
+    #photo-main-photo img{
+        width: 105%;
+    }
+    #main-zapros-container {
+        width: 90%;
     }
     #zamer-container {
         width: 88%;
     }
+    #photo1-zamer {
+        width: 15%;
+        left: 78%;
+        bottom: 27vw;
+        width: 18%;
+    }
+    #photo2-zamer {
+        width: 20%;
+        right: 16%;
+        bottom: 20vw;
+        width: 23%;
+    }
+    /* #page-2-ser {
+        display: none;
+    }
+    #page-1-ser {
+        width: 88%;
+    } */
+    #flex-container-header span a {
+        font-size: 2.3vw;
+    }
+    #text-main-photo-container button {
+        font-size: 2.5vw;
+    }
+    #text-main-photo-container h1 {
+        font-size: 4vw;
+    }
+    #text-main-photo-container h3 {
+        font-size: 3.3vw;
+        font-weight: 500;
+    }
+    #main-primer-container p {
+        font-size: 2.7vw;
+    }
+    #flex-main-primer-container button span {
+        font-size: 2.2vw;
+    }
+    #text-main-zapros-container h1 {
+        font-size: 3.5vw;
+    }
+    #text-main-zapros-container h3 {
+        font-size: 2.7vw;
+    }
+    #main-zapros-mini-container h1 {
+        font-size: 2.7vw;
+    }
+    #main-zapros div input {
+        padding: 0.7vw 1.2vw;
+        font-size: 2vw;
+    }
+    #main-zapros div select {
+        padding: 0.7vw 0.7vw;
+        font-size: 2vw;
+    }
+    #main-zapros div button {
+        font-size: 2vw;
+    }
     #h1text-zamer {
-        font-size: 2.8vw;
+        font-size: 3vw;
     }
     #h3text-zamer {
+        font-size: 2.7vw;
+    }
+    #tel-zamer select , #name-zamer p {
         font-size: 2.4vw;
     }
-    #name-zamer p {
+    #tel-zamer input , #name-zamer input{
+        padding: 2vw 1vw;
         font-size: 2vw;
     }
-    #name-zamer input {
-        padding: 0.7vw 1vw;
-        font-size: 1.6vw;
+    #ser-page h1 {
+        font-size: 2.7vw;
+    }
+    #ser-block div div h3 {
+    font-size: 2.5vw;
+    }
+    #ser-block div div button {
+    font-size: 2vw;
+    }
+    #ser-block div div p {
+        font-size: 2vw;
+    }
+    #front img , #back img {
+        box-shadow: inset 0.5em 0px rgb(239, 237, 234) , 0.5em 0px rgba(119, 114, 110, 0.75) , inset 10em 0px rgba(119, 114, 110, 0.75);
+    }
+}
+@media screen and (max-width:500px) {
+    header div {
+        background-color: rgb(239, 237, 234);
+    }
+    header div div span , header div div a {
+        display: none;
+    }
+    #flex-container-header {
+        justify-content: flex-end;
+    }
+    #flex-container-header button {
+        position: fixed;
+        display: block;
+        height: 8vw;
+        width: 8vw;
+        border: none;
+        border-radius: 50%;
+        margin-top: 3vw;
+        z-index: 10;
+    }
+    #flex-container-header button img {
+        height: 100%;
+        width: 100%;
+
+    }
+    #main {
+        width: 90%;
+    }
+    #photo-main-photo img{
+        width: 105%;
+    }
+    #main-zapros-container {
+        width: 90%;
+    }
+    #zamer-container {
+        width: 88%;
+    }
+    #photo1-zamer {
+        width: 15%;
+        left: 79%;
+        bottom: 23vw;
+        width: 18%;
+    }
+    #photo2-zamer {
+        width: 20%;
+        right: 17%;
+        bottom: 21vw;
+        width: 23%;
+    }
+    #flex-container-header span a {
+        font-size: 2.3vw;
+    }
+    #main-photo-container {
+        flex-direction: column;
+    }
+    #text-main-photo-container button {
+        font-size: 3.5vw;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 52vw;
+    }
+    #text-main-photo-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #text-main-photo-container h1 {
+        font-size: 5vw;
+    }
+    #text-main-photo-container h3 {
+        font-size: 4vw;
+        font-weight: 500;
+    }
+    #photo-main-photo img {
+        position: relative;
+        bottom: 13vw;
+        left: 11vw;
+        width: 180%;
+    }
+    #main-primer-container p {
+        font-size: 4vw;
+    }
+    #flex-main-primer-container button {
+        width: 23%;
+        height: 20.7vw;
+    }
+    #flex-main-primer-container button img {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    #flex-main-primer-container button span {
+        font-size: 3vw;
+    }
+    #text-main-zapros-container h1 {
+        font-size: 4.5vw;
+    }
+    #text-main-zapros-container h3 {
+        font-size: 3.2vw;
+    }
+    #main-zapros-mini-container h1 {
+        font-size: 3.3vw;
+    }
+    #main-zapros div input {
+        padding: 1vw 1.2vw;
+        font-size: 2.7vw;
+        border-radius: 3vw;
+    }
+    #main-zapros div select {
+        padding: 1vw 0.7vw;
+        font-size: 2.7vw;
+        border-radius: 3vw;
+    }
+    #main-zapros div button {
+        font-size: 2.7vw;
+        border-radius: 3vw;
+    }
+    #h1text-zamer {
+        font-size: 4vw;
+    }
+    #h3text-zamer {
+        font-size: 3.2vw;
+    }
+    #tel-zamer select , #name-zamer p {
+        font-size: 3vw;
     }
     #tel-zamer select {
-        font-size: 2vw;
+        margin-left: 15vw;
     }
-    #tel-zamer input {
-        padding: 0.7vw 1vw;
-        font-size: 1.6vw;
+    #tel-zamer input , #name-zamer input{
+        padding: 2.5vw 1vw;
+        font-size: 2.5vw;
+    }
+    #ser-page h1 {
+        font-size: 4vw;
+    }
+    #ser-block div {
+        width: 80%;
+    }
+    #page-2-ser {
+        display: none;
+    }
+    #ser-block div div {
+        border-radius: 4vw;
+    }
+    #ser-block div div img {
+        border-radius: 4vw;
+        width: 85%;
+    }
+    #front , #back {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 50%;
+    }
+    #ser-block div div h3 {
+        font-size: 4vw;
+    }
+    #ser-block div div button {
+        font-size: 3vw;
+    }
+    #ser-block div div p {
+        font-size: 3vw;
+    }
+    #front img , #back img {
+        box-shadow: inset 0.5em 0px rgb(239, 237, 234) , 0.5em 0px rgba(119, 114, 110, 0.75) , inset 10em 0px rgba(119, 114, 110, 0.75);
     }
 }
