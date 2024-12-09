@@ -389,7 +389,7 @@ header {
     transform: rotate(180deg);
 }
 #ser-block div div {
-    width: 44%;
+    width: 47%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -761,7 +761,7 @@ header {
         flex-direction: column;
     }
     #text-main-photo-container button {
-        font-size: 4vw;
+        font-size: 4.4vw;
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -787,33 +787,35 @@ header {
         width: 200%;
     }
     #main-primer-container p {
-        font-size: 4.3vw;
+        font-size: 5vw;
         margin-bottom: 5vw;
         margin-top: 8vw;
     }
     #flex-main-primer-container button {
         width: 46%;
-        height: 29vw;
+        height: 31vw;
         margin-bottom: 2vw;
     }
     #flex-main-primer-container button img {
         margin-top: 2vw;
         margin-bottom: 1vw;
+        width: 80%;
+        height: auto;
     }
     #flex-main-primer-container button span {
-        font-size: 4vw;
+        font-size: 4.3vw;
     }
     #main-zapros-block {
         margin-top: 7vw;
     }
     #text-main-zapros-container h1 {
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
     #text-main-zapros-container h3 {
-        font-size: 3.5vw;
+        font-size: 4.2vw;
     }
     #main-zapros-mini-container h1 {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     #main-zapros {
         width: 93.5%;
@@ -821,24 +823,25 @@ header {
     }
     #main-zapros div input {
         padding: 1vw 1.2vw;
-        font-size: 3.3vw;
-        border-radius: 3vw;
+        font-size: 4vw;
+        border-radius: 3.5vw;
     }
     #main-zapros div select {
-        padding: 1vw 0.7vw;
-        font-size: 3.5vw;
-        border-radius: 3vw;
+        padding: 1vw 1.2vw;
+        font-size: 4vw;
+        border-radius: 4vw;
         margin: 1vw 2vw;
     }
     #main-zapros div button {
-        font-size: 3.5vw;
-        border-radius: 3vw;
+        font-size: 4vw;
+        padding: 1vw 1.5vw;
+        border-radius: 3.5vw;
     }
     #h1text-zamer {
-        font-size: 5vw;
+        font-size: 5.3vw;
     }
     #h3text-zamer {
-        font-size: 3.2vw;
+        font-size: 3.3vw;
     }
     #name-zamer {
         margin-top: 5vw;
@@ -851,12 +854,12 @@ header {
         font-size: 4vw;
     }
     #tel-zamer select {
-        margin-left: 11vw;
+        margin-left: 9vw;
     }
     #tel-zamer input , #name-zamer input{
-        padding: 3vw 1vw;
+        padding: 3vw 0vw;
         font-size: 3vw;
-        border-radius: 4vw;
+        border-radius: 3.5vw;
     }
     #ser-block {
         width: 90%;
