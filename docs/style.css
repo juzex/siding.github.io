@@ -439,6 +439,7 @@ header {
 #advantages-page {
     width: 100%;
     height: auto;
+    margin-top: 10vw;
 }
 #advantages-page h1 {
     display: inline-block;
@@ -981,29 +982,32 @@ header {
     #advantages-page #advantages-block  div {
         width: 46%;
         border-radius: 2vw;
-        height: 50vw;
-        flex-direction: column;
+        height: 52vw;
+        flex-direction: column-reverse;
         flex-wrap: nowrap;
+        justify-content: space-around;
     }
     #advantages-page #advantages-block  img {
-        width: 38%;
+        width: 40%;
         height: 33%;
+        margin: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 1vw;
+        margin-top: 2vw;
         margin-bottom: 1vw;
     }
     #advantages-page #advantages-block  p {
         width: 90%;
-        font-size: 3.3vw;
+        font-size: 3.6vw;
+        margin: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 2vw;
-        margin-top: 2vw;
+        text-align: center;
+        order: -1;
     }
     #advantages-page #advantages-block  h3 {
-        font-size: 4vw;
-        margin: auto;
+        font-size: 4.5vw;
+        margin: 0 auto;
         text-align: center;
     }
 }
