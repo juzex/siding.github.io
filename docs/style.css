@@ -979,20 +979,31 @@ header {
         border-radius: 3vw;
     }
     #advantages-page #advantages-block  div {
-        width: 32%;
+        width: 46%;
         border-radius: 2vw;
-        height: 17vw;
+        height: 50vw;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     #advantages-page #advantages-block  img {
-        width: 35%;
-        height: 62%;
+        width: 38%;
+        height: 33%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
     #advantages-page #advantages-block  p {
-        width: 60%;
-        font-size: 1.8vw;
+        width: 90%;
+        font-size: 3.3vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
     }
     #advantages-page #advantages-block  h3 {
-        margin-top: 1vw;
-        font-size: 2.2vw;
+        font-size: 4vw;
+        margin: auto;
+        text-align: center;
     }
 }
